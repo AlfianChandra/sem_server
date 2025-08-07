@@ -15,8 +15,7 @@ export const useWhatsAppBot = () => {
   const options = {
     localPath:
       "C:/Users/alfia/.cache/puppeteer/chrome/win64-121.0.6167.85/chrome-win64/chrome.exe",
-    productionPath:
-      "/root/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome",
+    productionPath: "/root/.cache/chrome-linux/chrome",
     dev: process.env.WABOT_DEV === "true",
     postfix: "@s.whatsapp.net",
     terminalAuth: true,
@@ -32,7 +31,7 @@ export const useWhatsAppBot = () => {
       type: "remote",
     },
     puppeteer: {
-      headless: false,
+      headless: options.dev ? false : true,
       executablePath: options.dev ? options.localPath : options.productionPath,
       args: [
         "--no-default-browser-check",

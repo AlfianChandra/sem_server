@@ -22,6 +22,7 @@ const io = new Server(server, {
     origin: process.env.SOCKET_ORIGINS?.split(" ") || [
       "http://localhost:3000",
       "http://localhost:5173",
+      "PostmanRuntime",
     ],
     methods: ["GET", "POST"],
   },

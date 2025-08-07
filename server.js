@@ -6,7 +6,10 @@ import { bsnwWorker } from "./worker/bsnw.worker.js";
 import { useBswnFun } from "./functions/bsnw.fun.js";
 import { useWaBotFun } from "./functions/wabot.fun.js";
 import { useAiCompletion } from "./controllers/ai.completion.ctrl.js";
-
+import dotenv from "dotenv";
+dotenv.config({
+  silent: true,
+});
 const aiCompletionController = useAiCompletion();
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

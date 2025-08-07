@@ -19,11 +19,6 @@ const server = http.createServer(app);
 const io = new Server(server, {
   path: process.env.SOCKET_PATH || "/socket.io",
   cors: {
-    origin: process.env.SOCKET_ORIGINS?.split(" ") || [
-      "http://localhost:3000",
-      "http://localhost:5173",
-      "PostmanRuntime",
-    ],
     methods: ["GET", "POST"],
   },
 });

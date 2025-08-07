@@ -1,0 +1,6 @@
+2025/07/31-19:14:16.548 57fc Reusing MANIFEST D:\SEM\chatbot_server\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2025/07/31-19:14:16.566 57fc Recovering log #7
+2025/07/31-19:14:16.570 57fc Reusing old log D:\SEM\chatbot_server\.wwebjs_auth\session\Default\Local Storage\leveldb/000007.log 
+2025/07/31-19:15:23.605 2794 Level-0 table #10: started
+2025/07/31-19:15:23.619 2794 Level-0 table #10: 20108 bytes OK
+2025/07/31-19:15:23.626 2794 Delete type=0 #7
